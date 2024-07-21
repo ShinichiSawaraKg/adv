@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="globalMenu.css">
+	<link rel="stylesheet" href="create.css">
+	<title>test</title>
+</head>
+
+<body>
+	<header th:replace="globalMenu :: globalMenu"></header>
+	<main id="create">
+		<div class="left-part">
+			<div class="sidebar-editor">
+				<div class="sidebar-component start-message"></div>
+				<div class="sidebar-separator">
+					<div class="separator-bar"></div>
+				</div>
+				<div class="sidebar-component data-panel">
+					<div class="question-group">
+						<div class="drag-drop-list">
+							<div class="question-component">
+								<div role="button" class="draggable-item">
+									<button kind="single" class="question-item">
+										<span class="block-navigation-item">
+											<div class="item-icon"></div> <!--iconができたら、svgタグに変更-->
+											<div class="item-number">1</div>
+										</span>
+										<span class="navigation-block-label">text</span>
+										<a type="button" class="three-point-leader">
+											<div>...</div> <!--iconができたら、svgタグに変更-->
+										</a>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sidebar-separator">
+					<div class="separator-bar"></div>
+				</div>
+				<div class="sidebar-component end-message"></div>
+			</div>
+		</div>
+		<div class="center-part">
+			<div class="center-setting-bar"></div>
+			<div class="question-content"></div>
+		</div>
+		<div class="right-part"></div>
+	</main>
+</body>
+
+</html>
